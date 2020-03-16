@@ -28,16 +28,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ml-auto"><!--ml-auto aligns nav bar to the right side-->
                 <li class="nav-item">
-                  <a class="nav-link" href="#">HOME </a><!--each ref point is a nav bar drop down icon...anything in white letters is seen by user-->
+                  <a class="nav-link" href="#home">HOME </a><!--each ref point is a nav bar drop down icon...anything in white letters is seen by user-->
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT ME</a>
+                  <a class="nav-link" href="#about-me">ABOUT ME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">PROJECTS</a>
+                  <a class="nav-link" href="#projects">PROJECTS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT INFO</a>
+                    <a class="nav-link" href="#contact-me">CONTACT ME</a>
                   </li>
               </ul>
             </div>
@@ -56,13 +56,13 @@
   Keep scrolling for great content.
   </p>
 <div  class="linkden">
-  <img src="download.png">
+  <a href="https://www.linkedin.com/" target="_blank"><img src="download.png"/></a><!--linked linkedin account woo hoo-->
 </div>
 
   <h2>About Me</h2>
     <div  class="about-me">
         <img src="computerprogrammer_collaborating.jfif">
-        <p><b>Education</b></p>
+        <p><b>EDUCATION</b></p>
         <small>In Feburary of 2020 I began taking courses at devCodeCamp. 
           The agenda was fully immersive where we were were taught how to become full stack web developers.
         The languages taught were C#, JS, SQL, and ASP.net to name a few.
@@ -71,30 +71,67 @@
     </div>
 
     <div  class="about-me">
-      <img src="computerprogrammer_collaborating.jfif">
-      <p><b>Career Path</b></p>
+      <img src="success.jfif">
+      <p><b>CAREER PATH</b></p>
       <small>It was a long hard fought road before I decided it was time to pursue my passion as a Software Developer! 
         I started as a machine operator on a corrugator, then a Heavy Equipment Operator in the military, followed by a CNC machinist programmer,
       and last a carpenter.  At each postion I reached my highest possible potential as there was no higher to go. In one instance I was even offered
-      to be a supervisor in a relatively short period of time. Feeling unfullied I decided I wanted greater challenges and a means to constantly learn
-      something new while achieving new heights, goals, and perspectives. That is when I decided Software Development was the only means to attain such a feat!  </small>
+      to be a supervisor in a relatively short period of time. Since money was never my top priority Feeling unfullied I decided I wanted greater challenges 
+      and a means to constantly learn something new while achieving new heights, goals, and perspectives. That is when I decided Software Development was 
+      the only means to attain such a feat!  </small>
   </div>
 
   <div  class="about-me">
-    <img src="computerprogrammer_collaborating.jfif">
-    <p><b>Hobbies and Family</b></p>
+    <img src="family.png">
+    <p><b>FAMILY</b></p>
     <small>Throughout my career path my wife Emeli and 3 children have been the reason I continue to push myself to reach my highest potential,
       not only in the work force but as a human being! There's nothing quite like being a father and learning things good and bad about yourself
       and finding new ways to teach your kids and others to be better than you. I've found that charity is the best way to do that. We try to reach
-      out to the homeless community and just talking to them and meeting some of their most basic needs. They really give me perspective in life 
-      and appreciation for the small things. The less fortunate is a big reason I joined the field, since its all about a problem solving mindset. 
-      A side project for me will be to create a homeless app that gives real time data to that community linking various communal resources in one 
-      place to help meet their daily provisional needs.
+      out to the homeless community and just talking to them to meet some of their most basic needs whenever possible. They really give me perspective in life 
+      and appreciation for the small things. The less fortunate is a big reason I joined this field, since its all about a problem solving mindset, 
+      homelessness is no doubt a huge problem especially here in the inner city. A side project for me will be to create a homeless app that gives 
+      real time data to that community linking various communal resources in one place to help meet their daily provisional needs.
     </small>
 </div>
+<div class="projects">
+<h2>PROJECTS</h2>
+
+    <p>Below are links to some of the various projects I've done while at devCodeCamp.</p>  
+      <p><b>Lemonadestand</b>- My favorite project where we simulated what it would be like to run a lemonade stand based on some economic factors and weather.</p>
+        <a href="https://github.com/JonathanFriedl03/Lemonadestand" target="_blank"><img src="github.png"/></a>
+          <p><b>Rock Paper Scissors Lizard Spock</b>-A game based on its title with two added features that required us to take our logic up another level.</p>
+            <a href="https://github.com/JonathanFriedl03/RockPaperScissorsLizardSpock" target="_blank"><img src="github.png"/></a>
+              <p><b>Custom List Project</b>-A project where we replicated various methods, operators, and generic classes already written into C# and tested them using TDD.</p>
+                <a href="https://github.com/JonathanFriedl03/CustomListProjectJF" target="_blank"><img src="github.png"/></a>
+  </div>
+  
+  <div class="form-box">
+    <h2>CONTACT ME</h2>
+    <form>
+      <div class="input-group">
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+      </div>
+      <div class="input-group">
+        <input type="number" placeholder="Phone Number">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="text-area">
+        <textarea rows="4" placeholder="Your Message"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">SEND MESSAGE</button>
+    </form>
+  </div>
+  <div class="contact">
+      <img src="gmail.png" alt="Gmail icon"><span>jfreetz@gmail.com</span>
+      <img src="phone.png" alt="Phone Icon"><span>+1 414-507-5137</span>
 
   </div>
-
-
+  <p class="copyright">Designed BY Jonathan Friedl</p>
+  <script src="smooth-scroll.js"></script><!--this is to initialize the menu bar to jump to page position..after all that it doesnt work..hmmm-->
+  <script>
+      var scroll = new SmoothScroll ('a[href*="#"]')
+  </script>
+  
 </body>
 </html>
