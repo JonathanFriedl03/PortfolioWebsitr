@@ -2,8 +2,107 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body
 {
     font-family: sans-serif;
+    background: #efefef;
 }
+#nav-bar
+{
+    position: sticky;/*when a user scrolls the nav bar will remain seen */
+    top: 0;
+    z-index: 10;/*will keep the navbar on top of any image or text since positive number vs behind for neg number*/
+}
+.navbar
+{
+    background-image: linear-gradient(to right, #2193b0, #6dd5ed);/*this has the nav bar fade to lighter colors this one is a blue*/
+    padding: 0 !important;/*important means  ignore all the subsequent rules, and apply ! important rule*/
+}
+.navbar-brand img/* sizing the logo*/
+{   
+    height: 80px;
+    padding-left: 20px;
+}    
+
+.navbar-nav li/*li is a list*/
+{
+    padding: 0 10px;
+    color: black !important;
+    font-weight: 600;/*property sets how thick or thin characters in text should be displayed*/
+    float: right;/*tells the nav box to float to the right*/
+    text-align: right;
+}
+.fa-bars/*this is for cell phone config*/
+{
+    color: black;
+    font-size: 30px !important;
+}
+.navbar-toggler
+{
+    outline: black  !important;
+}
+.profile-img
+{
+    
+    width: 40%;
+    float: right;
+   
+}
+.profile-img img/*keeps the image stationary*/
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
